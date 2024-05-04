@@ -61,13 +61,13 @@ const render =()=>{
 
     
 
-    console.log(lastDateof_PresentMonth);
+    console.log(lastDayof_PresentMonth);
     console.log(nextMonth_FirstDay);
 
-    for (let i = lastDateof_PresentMonth; i < 6; i++) {
-        console.log(`${i- lastDateof_PresentMonth + 1}`);
+    for (let i = lastDayof_PresentMonth; i < 6; i++) {
+        console.log(`${i- lastDayof_PresentMonth + 1}`);
 
-        mainCont += `<li id="inactive">${i- lastDateof_PresentMonth+ 1}</li>`
+        mainCont += `<li id="inactive">${i- lastDayof_PresentMonth+ 1}</li>`
         
     }
     
