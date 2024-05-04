@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calender {
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 26px;
+    padding: 30px;
+    font-size: large;
+}
+
+#header p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#header span {
+    margin: 15px;
+    padding: 10px;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#header span:hover {
+    background-color: rgba(128, 128, 128, 0.372);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 450px;
+    background-color: rgba(240, 248, 255, 0.608);
+    border-radius: 20px;
+}
+
+.calender ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calender li {
+    width: calc(100% / 7);
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.calender li:hover {
+    background-color: rgba(128, 128, 128, 0.303);
+    border-radius: 50%;
+}
+
+#inactive {
+    color: rgba(128, 128, 128, 0.573);
+}
+
+#active {
+    color: white;
+    background-color: #af653e ;
+    border-radius: 50px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 5px;
+    }
+
+}
