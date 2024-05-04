@@ -35,7 +35,7 @@ const render =()=>{
     const first_Day = new Date(cYear,cMonth,1).getDay();   // first Day in number
     let lastDateOfPrevMonth = new Date(cYear,cMonth,0).getDate(); //last date of previous Month
     
-    const lastDateof_PresentMonth = new Date(cYear,cMonth+1,0).getDay();
+    const lastDayof_PresentMonth = new Date(cYear,cMonth+1,0).getDay();
     const nextMonth_FirstDay = new Date(cYear,cMonth+1,1).getDate();
 
     const Month_Last_Date = new Date(cYear, cMonth+1,0).getDate();
